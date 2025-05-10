@@ -23,7 +23,7 @@ MARK_SPEAK = 0
 
 
 st.sidebar.title("Điều hướng")
-page = st.sidebar.radio("Chọn trang", ["Trang chủ", "Thông tin", "SightSeeingGemma"])
+page = st.sidebar.radio("Chọn trang", ["SightSeeingGemma", "Trang chủ", "Thông tin"])
 
 
 # === Trang chủ ===
