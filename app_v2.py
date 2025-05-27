@@ -16,7 +16,7 @@ logging.getLogger('streamlit').setLevel(logging.ERROR)
 
 
 # Các biến toàn cục (URL server, khoảng thời gian chụp)
-NGROK_URL = "https://6a44-34-142-204-127.ngrok-free.app"
+NGROK_URL = "https://present-delicate-shark.ngrok-free.app"
 API_ENDPOINT = f"{NGROK_URL}/describe_image"
 CAPTURE_INTERVAL = 5  # giây
 MARK_SPEAK = 0
@@ -31,7 +31,7 @@ if page == "Trang chủ":
     col1, col2 = st.columns([1, 3])  # Chia layout: 1 phần logo, 3 phần chữ
 
     with col1:
-        st.image("logo.png")  # Thay đổi kích thước logo nếu cần
+        st.image("imgs/logo.png")  # Thay đổi kích thước logo nếu cần
 
     with col2:
         st.markdown("""
@@ -163,7 +163,7 @@ Dự án được phát triển để đăng ký tham dự cuộc thi:
 **Hạn đăng ký:** 31/5/2025  
 **Đối tượng dự thi:** Công dân Việt Nam dưới 35 tuổi, đang sinh sống, học tập, làm việc trong và ngoài nước """) 
 
-    st.image("poster-SP-nguoi-khuyet-tat-2025-1080x720.png", caption="Trang thông tin cuộc thi", use_container_width =True)
+    st.image("imgs/poster-SP-nguoi-khuyet-tat-2025-1080x720.png", caption="Trang thông tin cuộc thi", use_container_width =True)
 
     st.markdown("""---
 
@@ -189,7 +189,7 @@ elif page == "SightSeeingGemma":
     col1, col2 = st.columns([1, 3])  # Chia layout: 1 phần logo, 3 phần chữ
 
     with col1:
-        st.image("logo.png")  # Thay đổi kích thước logo nếu cần
+        st.image("imgs/logo.png")  # Thay đổi kích thước logo nếu cần
 
     with col2:
         st.markdown("""
@@ -314,7 +314,7 @@ elif page == "SightSeeingGemma":
             img = enhancer_color.enhance(saturation / 50)
 
             # Hiển thị ảnh đã chỉnh sửa
-            camera_placeholder.image(img, caption="Đang Trực Tiếp", use_container_width=True)
+            camera_placeholder.image(img, caption="Đang Trực Tiếp")
 
             # Gửi ảnh lên server nếu nút được nhấn
             if send_button:

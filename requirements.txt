@@ -3,3 +3,4 @@ opencv-python
 Pillow 
 pyttsx3
 streamlit
+supervision==0.6.0
