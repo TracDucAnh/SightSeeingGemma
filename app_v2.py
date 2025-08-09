@@ -16,7 +16,7 @@ logging.getLogger('streamlit').setLevel(logging.ERROR)
 
 
 # Các biến toàn cục (URL server, khoảng thời gian chụp)
-NGROK_URL = "https://present-delicate-shark.ngrok-free.app"
+NGROK_URL = "https://regularly-tender-kite.ngrok-free.app"
 API_ENDPOINT = f"{NGROK_URL}/describe_image"
 CAPTURE_INTERVAL = 5  # giây
 MARK_SPEAK = 0
@@ -250,10 +250,10 @@ elif page == "SightSeeingGemma":
         engine = pyttsx3.init()
         voices = engine.getProperty("voices")
         if len(voices) > 1:
-            engine.setProperty("voice", voices[1].id)
+            engine.setProperty("voice", voices[89].id)
         elif voices:
             engine.setProperty("voice", voices[0].id) # Sử dụng giọng nói mặc định nếu chỉ có một
-        engine.setProperty("rate", 150)
+        engine.setProperty("rate", 190)
         engine.say(text)
         engine.runAndWait()
         engine.stop()
